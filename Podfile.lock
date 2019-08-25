@@ -1,0 +1,38 @@
+PODS:
+  - Alamofire (4.8.1)
+  - FaveButton (3.2.0)
+  - Realm (3.13.1):
+    - Realm/Headers (= 3.13.1)
+  - Realm/Headers (3.13.1)
+  - RealmSwift (3.13.1):
+    - Realm (= 3.13.1)
+  - SwiftyJSON (4.2.0)
+  - SwipeCellKit (2.5.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - FaveButton
+  - RealmSwift
+  - SwiftyJSON
+  - SwipeCellKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - FaveButton
+    - Realm
+    - RealmSwift
+    - SwiftyJSON
+    - SwipeCellKit
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  FaveButton: c818ab3d04d22a7615e93f08c7b35932acb3f735
+  Realm: 50071da38fe079e0735e47c9f2eae738c68c5996
+  RealmSwift: 8a1e6a02b7a08cd17a31e3115143fb69fe5f3fb9
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  SwipeCellKit: 30fd6a4f8a8b8ac864ea389c8b4c8bac5ba5471a
+
+PODFILE CHECKSUM: 0941fd8e6c282c3dc1dfa304617901dcc75c54f0
+
+COCOAPODS: 1.6.1
