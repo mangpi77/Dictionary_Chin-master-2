@@ -36,7 +36,7 @@
         <!--Menu View Controller-->
         <scene sceneID="WzP-vf-G0h">
             <objects>
-                <viewController storyboardIdentifier="menuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mJl-Tf-JQt" customClass="menuViewController" customModule="memuDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="menuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mJl-Tf-JQt" customClass="menuViewController" customModule="Chin_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="M39-Be-sxO"/>
                         <viewControllerLayoutGuide type="bottom" id="N0H-71-vKa"/>
@@ -46,10 +46,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GmS-83-v4N">
-                                <rect key="frame" x="0.0" y="136" width="375" height="531"/>
+                                <rect key="frame" x="0.0" y="86" width="375" height="581"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MenuCell" id="Wiy-gD-EKL" customClass="MenuCell" customModule="memuDemo" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MenuCell" id="Wiy-gD-EKL" customClass="MenuCell" customModule="Chin_Dictionary" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wiy-gD-EKL" id="rPR-z5-SZt">
@@ -92,22 +92,22 @@
                                     <outlet property="delegate" destination="mJl-Tf-JQt" id="94q-kK-Kuk"/>
                                 </connections>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="mJc-GG-32H">
-                                <rect key="frame" x="16" y="28" width="100" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon@3" translatesAutoresizingMaskIntoConstraints="NO" id="mJc-GG-32H">
+                                <rect key="frame" x="30" y="28" width="65" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="bZN-8F-A8H"/>
-                                    <constraint firstAttribute="width" constant="100" id="jF8-GF-eHh"/>
+                                    <constraint firstAttribute="height" constant="50" id="NdM-bw-8sr"/>
+                                    <constraint firstAttribute="width" constant="65" id="fI7-Z4-6T5"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="GmS-83-v4N" firstAttribute="top" secondItem="mJc-GG-32H" secondAttribute="bottom" constant="8" id="2aW-OB-Eko"/>
-                            <constraint firstItem="mJc-GG-32H" firstAttribute="leading" secondItem="9pH-dG-ygv" secondAttribute="leadingMargin" id="FXF-UF-vdd"/>
                             <constraint firstItem="N0H-71-vKa" firstAttribute="top" secondItem="GmS-83-v4N" secondAttribute="bottom" id="Xsk-ms-4KL"/>
                             <constraint firstAttribute="trailing" secondItem="GmS-83-v4N" secondAttribute="trailing" id="ZMp-9T-tIx"/>
-                            <constraint firstItem="mJc-GG-32H" firstAttribute="top" secondItem="M39-Be-sxO" secondAttribute="bottom" constant="8" id="eGH-fT-NLH"/>
+                            <constraint firstItem="mJc-GG-32H" firstAttribute="top" secondItem="M39-Be-sxO" secondAttribute="bottom" constant="8" id="big-OJ-uiL"/>
+                            <constraint firstItem="mJc-GG-32H" firstAttribute="leading" secondItem="9pH-dG-ygv" secondAttribute="leadingMargin" constant="14" id="bjc-na-n2T"/>
                             <constraint firstItem="GmS-83-v4N" firstAttribute="leading" secondItem="9pH-dG-ygv" secondAttribute="leading" id="ih3-io-irN"/>
+                            <constraint firstItem="GmS-83-v4N" firstAttribute="top" secondItem="mJc-GG-32H" secondAttribute="bottom" constant="8" id="jX4-TC-Qkd"/>
                         </constraints>
                     </view>
                     <connections>
@@ -122,7 +122,7 @@
         <!--Search View Controller-->
         <scene sceneID="4RA-w9-HLQ">
             <objects>
-                <tableViewController storyboardIdentifier="SearchViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="a9i-sf-Zqn" customClass="SearchViewController" customModule="memuDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="SearchViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="a9i-sf-Zqn" customClass="SearchViewController" customModule="Chin_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Muy-yk-A8w">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -172,7 +172,7 @@
         <!--View Controller-->
         <scene sceneID="DhQ-UJ-cwR">
             <objects>
-                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="w4s-Em-FhA" customClass="ViewController" customModule="memuDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="w4s-Em-FhA" customClass="ViewController" customModule="Chin_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="e6O-Jf-1oe"/>
                         <viewControllerLayoutGuide type="bottom" id="6p1-Ck-WUB"/>
@@ -294,7 +294,7 @@
         <!--Favorite View Controller-->
         <scene sceneID="JIu-Cu-Msr">
             <objects>
-                <viewController storyboardIdentifier="FavoriteViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GGh-bx-wb1" customClass="FavoriteViewController" customModule="memuDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FavoriteViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GGh-bx-wb1" customClass="FavoriteViewController" customModule="Chin_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FRl-w1-quz"/>
                         <viewControllerLayoutGuide type="bottom" id="K1r-PZ-iH8"/>
@@ -334,7 +334,7 @@
         <!--Setting View Controller-->
         <scene sceneID="7cd-oY-OZt">
             <objects>
-                <viewController storyboardIdentifier="SettingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SXD-9v-4Qf" customClass="SettingViewController" customModule="memuDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SXD-9v-4Qf" customClass="SettingViewController" customModule="Chin_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Whc-dt-ukb"/>
                         <viewControllerLayoutGuide type="bottom" id="mbW-Zd-1Ys"/>
@@ -367,7 +367,7 @@
         <!--Recent Table View Controller-->
         <scene sceneID="UkP-EZ-BtS">
             <objects>
-                <tableViewController storyboardIdentifier="RecentTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cp3-mM-mpj" customClass="RecentTableViewController" customModule="memuDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="RecentTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cp3-mM-mpj" customClass="RecentTableViewController" customModule="Chin_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="A5n-kl-YRb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -405,7 +405,7 @@
         <!--Favorite Table View Controller-->
         <scene sceneID="pYk-S9-jsO">
             <objects>
-                <tableViewController storyboardIdentifier="FavoriteTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VEr-C9-O32" customClass="FavoriteTableViewController" customModule="memuDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="FavoriteTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VEr-C9-O32" customClass="FavoriteTableViewController" customModule="Chin_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Cin-8x-mGQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -443,7 +443,7 @@
         <!--Details View Controller-->
         <scene sceneID="XQx-Oq-S5C">
             <objects>
-                <viewController storyboardIdentifier="DetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4qq-SO-jHm" customClass="DetailsViewController" customModule="memuDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4qq-SO-jHm" customClass="DetailsViewController" customModule="Chin_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Dad-bj-x68"/>
                         <viewControllerLayoutGuide type="bottom" id="NLi-Tj-6du"/>
@@ -713,7 +713,7 @@
         <!--Daily Word Table View Controller-->
         <scene sceneID="c3g-CA-lyp">
             <objects>
-                <tableViewController storyboardIdentifier="DailyWordTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="isW-GM-hmy" customClass="DailyWordTableViewController" customModule="memuDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="DailyWordTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="isW-GM-hmy" customClass="DailyWordTableViewController" customModule="Chin_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ePc-H7-85a">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -753,7 +753,6 @@
         <image name="audio" width="29" height="45"/>
         <image name="heart" width="128" height="128"/>
         <image name="icon@3" width="879" height="672"/>
-        <image name="logo" width="400" height="400"/>
         <image name="menu" width="21.333333969116211" height="21.333333969116211"/>
         <image name="share" width="38" height="41"/>
     </resources>

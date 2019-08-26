@@ -53,7 +53,7 @@
 		56FA6F9E7F59F957A7A815E9 /* Pods-memuDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memuDemo.release.xcconfig"; path = "Target Support Files/Pods-memuDemo/Pods-memuDemo.release.xcconfig"; sourceTree = "<group>"; };
 		6EB934D600CE6DF44B3A0FDF /* Pods_memuDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_memuDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B8352D86229E5B10C4D5A2F /* Pods-memuDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memuDemo.debug.xcconfig"; path = "Target Support Files/Pods-memuDemo/Pods-memuDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		B222F1E41DAA30330089573D /* memuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B222F1E41DAA30330089573D /* Chin Dictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chin Dictionary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B222F1E71DAA30330089573D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B222F1E91DAA30330089573D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B222F1EC1DAA30330089573D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -148,7 +148,7 @@
 		B222F1E51DAA30330089573D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B222F1E41DAA30330089573D /* memuDemo.app */,
+				B222F1E41DAA30330089573D /* Chin Dictionary.app */,
 				B222F1F81DAA30330089573D /* memuDemoTests.xctest */,
 				B222F2031DAA30330089573D /* memuDemoUITests.xctest */,
 			);
@@ -207,9 +207,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B222F1E31DAA30320089573D /* memuDemo */ = {
+		B222F1E31DAA30320089573D /* Chin Dictionary */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B222F20C1DAA30330089573D /* Build configuration list for PBXNativeTarget "memuDemo" */;
+			buildConfigurationList = B222F20C1DAA30330089573D /* Build configuration list for PBXNativeTarget "Chin Dictionary" */;
 			buildPhases = (
 				AB461F51DAA64F4D899BC638 /* [CP] Check Pods Manifest.lock */,
 				B222F1E01DAA30320089573D /* Sources */,
@@ -221,9 +221,9 @@
 			);
 			dependencies = (
 			);
-			name = memuDemo;
+			name = "Chin Dictionary";
 			productName = memuDemo;
-			productReference = B222F1E41DAA30330089573D /* memuDemo.app */;
+			productReference = B222F1E41DAA30330089573D /* Chin Dictionary.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B222F1F71DAA30330089573D /* memuDemoTests */ = {
@@ -305,7 +305,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B222F1E31DAA30320089573D /* memuDemo */,
+				B222F1E31DAA30320089573D /* Chin Dictionary */,
 				B222F1F71DAA30330089573D /* memuDemoTests */,
 				B222F2021DAA30330089573D /* memuDemoUITests */,
 			);
@@ -442,12 +442,12 @@
 /* Begin PBXTargetDependency section */
 		B222F1FA1DAA30330089573D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B222F1E31DAA30320089573D /* memuDemo */;
+			target = B222F1E31DAA30320089573D /* Chin Dictionary */;
 			targetProxy = B222F1F91DAA30330089573D /* PBXContainerItemProxy */;
 		};
 		B222F2051DAA30330089573D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B222F1E31DAA30320089573D /* memuDemo */;
+			target = B222F1E31DAA30320089573D /* Chin Dictionary */;
 			targetProxy = B222F2041DAA30330089573D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -684,7 +684,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B222F20C1DAA30330089573D /* Build configuration list for PBXNativeTarget "memuDemo" */ = {
+		B222F20C1DAA30330089573D /* Build configuration list for PBXNativeTarget "Chin Dictionary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B222F20D1DAA30330089573D /* Debug */,

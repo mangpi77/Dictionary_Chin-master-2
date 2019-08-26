@@ -45,7 +45,7 @@ class SearchViewController: UITableViewController {
         menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
         
         //        if (wordOfDay.word != nil){
-        //        wordOfTheDay(word: wordOfDay)
+        //wordOfTheDay(word: wordOfDay)
         //        }
         
         loadDictionary()
@@ -61,7 +61,7 @@ class SearchViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "searchBar", for: indexPath)
-        cell.textLabel?.text = wordSearch?[indexPath.row].searchWord ?? "No world found"
+        cell.textLabel?.text = wordSearch?[indexPath.row].searchWord ?? "Search for word"
         return cell
     }
     
@@ -133,7 +133,7 @@ class SearchViewController: UITableViewController {
     func loadDictionary()
     {
         wordSearch = realm.objects(Data.self)
-        wordSearch = wordSearch?.self.sorted(byKeyPath: "searchWord", ascending: false)
+        wordSearch = wordSearch?.self.sorted(byKeyPath: "searchWord", ascending: true)
         
         tableView.reloadData()
     }

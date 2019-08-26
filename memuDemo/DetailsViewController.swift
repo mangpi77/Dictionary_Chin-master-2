@@ -381,7 +381,14 @@ class DetailsViewController: UIViewController {
                     }
                     
                     soundURL = filePath + "/" + subDirectory + "/" + fileName + ".wav"
-                    GlobalVariable.songPath = soundURL
+                    let soundFinal = soundURL.trimmingCharacters(in: .whitespaces)
+                    if (soundURL != ""){
+                    GlobalVariable.songPath = soundFinal
+                    }
+                    else{
+                    GlobalVariable.songPath = ""
+                    }
+                    print (soundURL)
                 }
                 // Get anynom
                 
@@ -408,7 +415,8 @@ class DetailsViewController: UIViewController {
     @IBAction func soundButton(_ sender: Any) {
         
         let passSound = word.text!
-        playSound(sound: passSound)
+        let trimmedString = passSound.trimmingCharacters(in: .whitespaces)
+        playSound(sound: trimmedString)
         
     }
     var checked = false
@@ -447,6 +455,7 @@ class DetailsViewController: UIViewController {
         }
         
         print ("Favorite Status",isFavorite)
+        print ("isFavorite", GlobalVariable.isFavorite)
  
     }
     

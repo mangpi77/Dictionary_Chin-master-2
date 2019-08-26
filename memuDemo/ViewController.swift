@@ -59,14 +59,14 @@ class ViewController: UIViewController, UITextFieldDelegate, UINavigationControl
         
         
         //
-        loadWordOfTheDay()
+       loadWordOfTheDay()
         //
         ////       let searchButton = UIButton (frame:  CGRect(x: 20, y:260, width: 330, height: 40))
         ////        searchButton.backgroundColor = UIColor.red
         ////        self.view.addSubview(searchButton)
         //
         //
-        //createWordOfTheDay(word: wordOfDay)
+       // createWordOfTheDay(word: wordOfDay)
         
         
         

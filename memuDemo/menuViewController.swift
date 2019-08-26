@@ -18,11 +18,11 @@ class menuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     override func viewDidLoad() {
         super.viewDidLoad()
         ManuNameArray = ["Home","Recent","Favorite", "Word of the Day", "Setting"]
-        iconArray = [UIImage(named:"home")!,UIImage(named:"recent")!,UIImage(named:"favorite")!,UIImage(named:"setting")!, UIImage(named:"setting")!]
+        iconArray = [UIImage(named:"book-2")!,UIImage(named:"history-2")!,UIImage(named:"heart-2")!,UIImage(named:"calendar-2")!, UIImage(named:"MoreSettings-2")!]
         
-        imgProfile.layer.borderWidth = 2
-        imgProfile.layer.borderColor = UIColor.green.cgColor
-        imgProfile.layer.cornerRadius = 50
+        //imgProfile.layer.borderWidth = 2
+//        imgProfile.layer.borderColor = UIColor.green.cgColor
+//        imgProfile.layer.cornerRadius = 50
         
         imgProfile.layer.masksToBounds = false
         imgProfile.clipsToBounds = true 
