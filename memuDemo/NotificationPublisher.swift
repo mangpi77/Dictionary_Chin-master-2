@@ -57,7 +57,7 @@ class NotificationPublisher: NSObject
         
         let creteWordOfDay = ViewController();
         
-        creteWordOfDay.createWordOfTheDay(word: wordOfDay1)
+       // creteWordOfDay.createWordOfTheDay(word: wordOfDay1)
         
         let notificationContent = UNMutableNotificationContent()
         notificationContent.title = title

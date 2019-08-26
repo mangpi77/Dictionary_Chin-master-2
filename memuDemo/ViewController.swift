@@ -60,19 +60,19 @@ class ViewController: UIViewController, UITextFieldDelegate, UINavigationControl
         
         
         //
-       loadWordOfTheDay()
+       //loadWordOfTheDay()
         //
         ////       let searchButton = UIButton (frame:  CGRect(x: 20, y:260, width: 330, height: 40))
         ////        searchButton.backgroundColor = UIColor.red
         ////        self.view.addSubview(searchButton)
         //
         //
-       // createWordOfTheDay(word: wordOfDay)
+       //createWordOfTheDay(word: wordOfDay)
         
         
         
-        //        notificationPublisher.scheduleNotification(title: "Tu ni hrang cafang", subtitle:  todayWord.text!, body: todayWordDefination.text!, badge: 1, delayInterval: nil)
-        ////
+                notificationPublisher.scheduleNotification(title: "Tu ni hrang cafang", subtitle:  todayWord.text!, body: todayWordDefination.text!, badge: 1, delayInterval: nil)
+        //
         //
         //        notificationPublisher.sendNotification(title: "Word Of The Day", subtitle:  todayWord.text!, body: todayWordDefination.text!, badge: 1, delayInterval: 10)
         

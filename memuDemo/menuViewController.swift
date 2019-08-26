@@ -87,7 +87,7 @@ class menuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
                 print (DetailsViewController.GlobalVariable.deleteFavorite)
                 print ("still favorite")
             }
-            else if (DetailsViewController.GlobalVariable.isFavorite == false){
+            else if (DetailsViewController.GlobalVariable.isFavorite == false && DetailsViewController.GlobalVariable.fromRecent == false){
                 print ("no longer favorite")
                 favorite.removeFavorite(fav: DetailsViewController.GlobalVariable.deleteFavorite)
                 
