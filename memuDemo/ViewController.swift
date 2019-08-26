@@ -221,6 +221,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UINavigationControl
         
         
         //todayWord.text = "\((wordCount[maxNumber - 1].word!))"
+        //
         
         todayWord.text = "\((wordCount[maxNumber - 1].word!))"
         dateLabel.text = "\((wordCount[maxNumber - 1].dateCreated!))"
