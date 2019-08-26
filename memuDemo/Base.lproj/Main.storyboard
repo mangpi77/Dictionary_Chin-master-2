@@ -228,16 +228,24 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Yzj-Ax-Jga">
+                                                <rect key="frame" x="8" y="8" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="Pkj-Zf-gBL" firstAttribute="leading" secondItem="SQr-yy-QYs" secondAttribute="leading" constant="8" id="0O0-eQ-IvV"/>
+                                            <constraint firstItem="Yzj-Ax-Jga" firstAttribute="leading" secondItem="SQr-yy-QYs" secondAttribute="leading" constant="8" id="0X8-2s-fJA"/>
                                             <constraint firstItem="Pkj-Zf-gBL" firstAttribute="centerX" secondItem="ZyV-vc-SjH" secondAttribute="centerX" id="7Wl-xm-Cy3"/>
                                             <constraint firstItem="ZyV-vc-SjH" firstAttribute="centerX" secondItem="SQr-yy-QYs" secondAttribute="centerX" id="9GE-y0-yOe"/>
                                             <constraint firstAttribute="height" constant="335" id="aT0-7V-uU7"/>
                                             <constraint firstItem="Pkj-Zf-gBL" firstAttribute="top" secondItem="ZyV-vc-SjH" secondAttribute="bottom" constant="15" id="gSY-bt-vIo"/>
                                             <constraint firstItem="ZyV-vc-SjH" firstAttribute="top" secondItem="SQr-yy-QYs" secondAttribute="top" constant="49" id="kIk-DQ-r3k"/>
                                             <constraint firstAttribute="trailing" secondItem="Pkj-Zf-gBL" secondAttribute="trailing" constant="8" id="qil-gV-Ccj"/>
+                                            <constraint firstItem="Yzj-Ax-Jga" firstAttribute="top" secondItem="SQr-yy-QYs" secondAttribute="top" constant="8" id="txB-NT-vbc"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -280,6 +288,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="btnMenuButton" destination="0FO-1o-je7" id="PR7-oS-fnL"/>
+                        <outlet property="dateLabel" destination="Yzj-Ax-Jga" id="RUN-sI-uP7"/>
                         <outlet property="searchButton" destination="u3W-dF-PGW" id="Hnf-AB-BYf"/>
                         <outlet property="todayWord" destination="ZyV-vc-SjH" id="rju-fA-snM"/>
                         <outlet property="todayWordDefination" destination="Pkj-Zf-gBL" id="BMg-RW-Wp0"/>

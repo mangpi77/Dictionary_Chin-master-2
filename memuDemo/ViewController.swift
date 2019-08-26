@@ -18,6 +18,7 @@ var wordOfDay = wordOfTheDay()
 class ViewController: UIViewController, UITextFieldDelegate, UINavigationControllerDelegate {
     
     
+    @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var btnMenuButton: UIBarButtonItem!
     @IBOutlet weak var todayWord: UILabel!
@@ -222,6 +223,16 @@ class ViewController: UIViewController, UITextFieldDelegate, UINavigationControl
         //todayWord.text = "\((wordCount[maxNumber - 1].word!))"
         
         todayWord.text = "\((wordCount[maxNumber - 1].word!))"
+        dateLabel.text = "\((wordCount[maxNumber - 1].dateCreated!))"
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM-dd-yyyy"
+        
+        if let date = dateFormatter.date(from: dateLabel.text!) {
+            print(dateFormatter.string(from: date))
+            dateLabel.text = dateFormatter.string(from: date)
+        } else {
+            print("There was an error decoding the string")
+        }
         
         var labelText = ""
         for (index,element) in completedSplit.enumerated() {
