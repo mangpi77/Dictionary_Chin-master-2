@@ -9,6 +9,7 @@
 import UIKit
 
 class menuViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    
 
     @IBOutlet weak var tblTableView: UITableView!
     @IBOutlet weak var imgProfile: UIImageView!
@@ -89,7 +90,7 @@ class menuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             }
             else if (DetailsViewController.GlobalVariable.isFavorite == false && DetailsViewController.GlobalVariable.fromRecent == false){
                 print ("no longer favorite")
-                favorite.removeFavorite(fav: DetailsViewController.GlobalVariable.deleteFavorite)
+                //favorite.removeFavorite(fav: DetailsViewController.GlobalVariable.deleteFavorite)
                 
             }
             else{

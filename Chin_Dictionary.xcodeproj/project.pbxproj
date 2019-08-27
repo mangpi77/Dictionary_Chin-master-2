@@ -7,17 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9360452A14BCBD8AD27F80BD /* Pods_Chin_Dictionary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7488F6CB5D1FFD3A4E85D099 /* Pods_Chin_Dictionary.framework */; };
 		B222F1E81DAA30330089573D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B222F1E71DAA30330089573D /* AppDelegate.swift */; };
 		B222F1EA1DAA30330089573D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B222F1E91DAA30330089573D /* ViewController.swift */; };
 		B222F1ED1DAA30330089573D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B222F1EB1DAA30330089573D /* Main.storyboard */; };
 		B222F1EF1DAA30330089573D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B222F1EE1DAA30330089573D /* Assets.xcassets */; };
 		B222F1F21DAA30330089573D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B222F1F01DAA30330089573D /* LaunchScreen.storyboard */; };
-		B222F1FD1DAA30330089573D /* memuDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B222F1FC1DAA30330089573D /* memuDemoTests.swift */; };
-		B222F2081DAA30330089573D /* memuDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B222F2071DAA30330089573D /* memuDemoUITests.swift */; };
 		B222F2181DAA33DA0089573D /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B222F2171DAA33DA0089573D /* SWRevealViewController.m */; };
 		B222F21A1DAA354D0089573D /* menuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B222F2191DAA354D0089573D /* menuViewController.swift */; };
 		B222F21C1DAA36070089573D /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B222F21B1DAA36070089573D /* MenuCell.swift */; };
-		D53159CBF7EB6102F4DDD3D2 /* Pods_memuDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2F8DC06295168F357FE9846 /* Pods_memuDemo.framework */; };
+		D53159CBF7EB6102F4DDD3D2 /* Realm in Frameworks */ = {isa = PBXBuildFile; fileRef = F2F8DC06295168F357FE9846 /* Realm */; settings = {ATTRIBUTES = (Required, ); }; };
 		DB0A6DF122A2EA16002A900B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0A6DF022A2EA16002A900B /* Data.swift */; };
 		DB0A6DF722A4D366002A900B /* recentSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0A6DF622A4D366002A900B /* recentSearch.swift */; };
 		DB42CB2522EFED8200D60311 /* wordOfTheDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB42CB2422EFED8200D60311 /* wordOfTheDay.swift */; };
@@ -32,46 +31,22 @@
 		DBBE3BF6229C967D00F48DE6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBE3BF5229C967D00F48DE6 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		B222F1F91DAA30330089573D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B222F1DC1DAA30320089573D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B222F1E31DAA30320089573D;
-			remoteInfo = memuDemo;
-		};
-		B222F2041DAA30330089573D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B222F1DC1DAA30320089573D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B222F1E31DAA30320089573D;
-			remoteInfo = memuDemo;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		56FA6F9E7F59F957A7A815E9 /* Pods-memuDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memuDemo.release.xcconfig"; path = "Target Support Files/Pods-memuDemo/Pods-memuDemo.release.xcconfig"; sourceTree = "<group>"; };
-		6EB934D600CE6DF44B3A0FDF /* Pods_memuDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_memuDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B8352D86229E5B10C4D5A2F /* Pods-memuDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memuDemo.debug.xcconfig"; path = "Target Support Files/Pods-memuDemo/Pods-memuDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		B222F1E41DAA30330089573D /* Chin Dictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chin Dictionary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E39A672609D6332686158B8 /* Pods-Chin_Dictionary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chin_Dictionary.release.xcconfig"; path = "Target Support Files/Pods-Chin_Dictionary/Pods-Chin_Dictionary.release.xcconfig"; sourceTree = "<group>"; };
+		7488F6CB5D1FFD3A4E85D099 /* Pods_Chin_Dictionary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chin_Dictionary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B0549197A5030604FB970C6 /* Pods-Chin_Dictionary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chin_Dictionary.debug.xcconfig"; path = "Target Support Files/Pods-Chin_Dictionary/Pods-Chin_Dictionary.debug.xcconfig"; sourceTree = "<group>"; };
+		B222F1E41DAA30330089573D /* Chin_Dictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chin_Dictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B222F1E71DAA30330089573D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B222F1E91DAA30330089573D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B222F1EC1DAA30330089573D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B222F1EE1DAA30330089573D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B222F1F11DAA30330089573D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B222F1F31DAA30330089573D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B222F1F81DAA30330089573D /* memuDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = memuDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B222F1FC1DAA30330089573D /* memuDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memuDemoTests.swift; sourceTree = "<group>"; };
-		B222F1FE1DAA30330089573D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B222F2031DAA30330089573D /* memuDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = memuDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B222F2071DAA30330089573D /* memuDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memuDemoUITests.swift; sourceTree = "<group>"; };
-		B222F2091DAA30330089573D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B222F2151DAA33D90089573D /* memuDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "memuDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		B222F2151DAA33D90089573D /* Chin_Dictionary-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chin_Dictionary-Bridging-Header.h"; sourceTree = "<group>"; };
 		B222F2161DAA33DA0089573D /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		B222F2171DAA33DA0089573D /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		B222F2191DAA354D0089573D /* menuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuViewController.swift; sourceTree = "<group>"; };
 		B222F21B1DAA36070089573D /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
-		CAC3A1C9B7BEC880A09AA203 /* Pods_memuDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_memuDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB0A6DF022A2EA16002A900B /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		DB0A6DF622A4D366002A900B /* recentSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recentSearch.swift; sourceTree = "<group>"; };
 		DB42CB2422EFED8200D60311 /* wordOfTheDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordOfTheDay.swift; sourceTree = "<group>"; };
@@ -85,7 +60,7 @@
 		DBBE3BF3229C869100F48DE6 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		DBBE3BF5229C967D00F48DE6 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		DBF269412310BB88003EFCF4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../../../Downloads/WCLShineButton-master/WCLShineButton/Info.plist"; sourceTree = "<group>"; };
-		F2F8DC06295168F357FE9846 /* Pods_memuDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_memuDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2F8DC06295168F357FE9846 /* Realm */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Realm; path = ../../../../../../../../Downloads/Chin_Dictionary/Pods/Realm/Realm; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,21 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D53159CBF7EB6102F4DDD3D2 /* Pods_memuDemo.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B222F1F51DAA30330089573D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B222F2001DAA30330089573D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				D53159CBF7EB6102F4DDD3D2 /* Realm in Frameworks */,
+				9360452A14BCBD8AD27F80BD /* Pods_Chin_Dictionary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,8 +79,8 @@
 		2EBA751F3C486DE151270F57 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7B8352D86229E5B10C4D5A2F /* Pods-memuDemo.debug.xcconfig */,
-				56FA6F9E7F59F957A7A815E9 /* Pods-memuDemo.release.xcconfig */,
+				9B0549197A5030604FB970C6 /* Pods-Chin_Dictionary.debug.xcconfig */,
+				0E39A672609D6332686158B8 /* Pods-Chin_Dictionary.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -126,9 +88,8 @@
 		79351D3DB003D3CF09AC01A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F2F8DC06295168F357FE9846 /* Pods_memuDemo.framework */,
-				6EB934D600CE6DF44B3A0FDF /* Pods_memuDemoTests.framework */,
-				CAC3A1C9B7BEC880A09AA203 /* Pods_memuDemoUITests.framework */,
+				F2F8DC06295168F357FE9846 /* Realm */,
+				7488F6CB5D1FFD3A4E85D099 /* Pods_Chin_Dictionary.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -136,9 +97,7 @@
 		B222F1DB1DAA30320089573D = {
 			isa = PBXGroup;
 			children = (
-				B222F1E61DAA30330089573D /* memuDemo */,
-				B222F1FB1DAA30330089573D /* memuDemoTests */,
-				B222F2061DAA30330089573D /* memuDemoUITests */,
+				B222F1E61DAA30330089573D /* Chin_Dictionary */,
 				B222F1E51DAA30330089573D /* Products */,
 				2EBA751F3C486DE151270F57 /* Pods */,
 				79351D3DB003D3CF09AC01A4 /* Frameworks */,
@@ -148,14 +107,12 @@
 		B222F1E51DAA30330089573D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B222F1E41DAA30330089573D /* Chin Dictionary.app */,
-				B222F1F81DAA30330089573D /* memuDemoTests.xctest */,
-				B222F2031DAA30330089573D /* memuDemoUITests.xctest */,
+				B222F1E41DAA30330089573D /* Chin_Dictionary.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B222F1E61DAA30330089573D /* memuDemo */ = {
+		B222F1E61DAA30330089573D /* Chin_Dictionary */ = {
 			isa = PBXGroup;
 			children = (
 				B222F1E71DAA30330089573D /* AppDelegate.swift */,
@@ -180,87 +137,33 @@
 				B222F1EE1DAA30330089573D /* Assets.xcassets */,
 				B222F1F01DAA30330089573D /* LaunchScreen.storyboard */,
 				B222F1F31DAA30330089573D /* Info.plist */,
-				B222F2151DAA33D90089573D /* memuDemo-Bridging-Header.h */,
+				B222F2151DAA33D90089573D /* Chin_Dictionary-Bridging-Header.h */,
 				B222F2191DAA354D0089573D /* menuViewController.swift */,
 			);
-			path = memuDemo;
-			sourceTree = "<group>";
-		};
-		B222F1FB1DAA30330089573D /* memuDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				B222F1FC1DAA30330089573D /* memuDemoTests.swift */,
-				B222F1FE1DAA30330089573D /* Info.plist */,
-			);
-			path = memuDemoTests;
-			sourceTree = "<group>";
-		};
-		B222F2061DAA30330089573D /* memuDemoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				B222F2071DAA30330089573D /* memuDemoUITests.swift */,
-				B222F2091DAA30330089573D /* Info.plist */,
-			);
-			path = memuDemoUITests;
+			path = Chin_Dictionary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B222F1E31DAA30320089573D /* Chin Dictionary */ = {
+		B222F1E31DAA30320089573D /* Chin_Dictionary */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B222F20C1DAA30330089573D /* Build configuration list for PBXNativeTarget "Chin Dictionary" */;
+			buildConfigurationList = B222F20C1DAA30330089573D /* Build configuration list for PBXNativeTarget "Chin_Dictionary" */;
 			buildPhases = (
-				AB461F51DAA64F4D899BC638 /* [CP] Check Pods Manifest.lock */,
+				C49CB9DC0CB50AECDE1562F8 /* [CP] Check Pods Manifest.lock */,
 				B222F1E01DAA30320089573D /* Sources */,
 				B222F1E11DAA30320089573D /* Frameworks */,
 				B222F1E21DAA30320089573D /* Resources */,
-				7E24620F01C01AE048E053E2 /* [CP] Embed Pods Frameworks */,
+				0245A508692E90D39293F6B2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Chin Dictionary";
+			name = Chin_Dictionary;
 			productName = memuDemo;
-			productReference = B222F1E41DAA30330089573D /* Chin Dictionary.app */;
+			productReference = B222F1E41DAA30330089573D /* Chin_Dictionary.app */;
 			productType = "com.apple.product-type.application";
-		};
-		B222F1F71DAA30330089573D /* memuDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B222F20F1DAA30330089573D /* Build configuration list for PBXNativeTarget "memuDemoTests" */;
-			buildPhases = (
-				B222F1F41DAA30330089573D /* Sources */,
-				B222F1F51DAA30330089573D /* Frameworks */,
-				B222F1F61DAA30330089573D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B222F1FA1DAA30330089573D /* PBXTargetDependency */,
-			);
-			name = memuDemoTests;
-			productName = memuDemoTests;
-			productReference = B222F1F81DAA30330089573D /* memuDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		B222F2021DAA30330089573D /* memuDemoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B222F2121DAA30330089573D /* Build configuration list for PBXNativeTarget "memuDemoUITests" */;
-			buildPhases = (
-				B222F1FF1DAA30330089573D /* Sources */,
-				B222F2001DAA30330089573D /* Frameworks */,
-				B222F2011DAA30330089573D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B222F2051DAA30330089573D /* PBXTargetDependency */,
-			);
-			name = memuDemoUITests;
-			productName = memuDemoUITests;
-			productReference = B222F2031DAA30330089573D /* memuDemoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -278,21 +181,9 @@
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
-					B222F1F71DAA30330089573D = {
-						CreatedOnToolsVersion = 8.0;
-						LastSwiftMigration = 1020;
-						ProvisioningStyle = Automatic;
-						TestTargetID = B222F1E31DAA30320089573D;
-					};
-					B222F2021DAA30330089573D = {
-						CreatedOnToolsVersion = 8.0;
-						LastSwiftMigration = 1020;
-						ProvisioningStyle = Automatic;
-						TestTargetID = B222F1E31DAA30320089573D;
-					};
 				};
 			};
-			buildConfigurationList = B222F1DF1DAA30320089573D /* Build configuration list for PBXProject "Dictionary_Chin" */;
+			buildConfigurationList = B222F1DF1DAA30320089573D /* Build configuration list for PBXProject "Chin_Dictionary" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -305,9 +196,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B222F1E31DAA30320089573D /* Chin Dictionary */,
-				B222F1F71DAA30330089573D /* memuDemoTests */,
-				B222F2021DAA30330089573D /* memuDemoUITests */,
+				B222F1E31DAA30320089573D /* Chin_Dictionary */,
 			);
 		};
 /* End PBXProject section */
@@ -323,24 +212,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B222F1F61DAA30330089573D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B222F2011DAA30330089573D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7E24620F01C01AE048E053E2 /* [CP] Embed Pods Frameworks */ = {
+		0245A508692E90D39293F6B2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -348,7 +223,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-memuDemo/Pods-memuDemo-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Chin_Dictionary/Pods-Chin_Dictionary-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/FaveButton/FaveButton.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
@@ -369,10 +244,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-memuDemo/Pods-memuDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Chin_Dictionary/Pods-Chin_Dictionary-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AB461F51DAA64F4D899BC638 /* [CP] Check Pods Manifest.lock */ = {
+		C49CB9DC0CB50AECDE1562F8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -387,7 +262,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-memuDemo-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Chin_Dictionary-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -421,36 +296,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B222F1F41DAA30330089573D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B222F1FD1DAA30330089573D /* memuDemoTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B222F1FF1DAA30330089573D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B222F2081DAA30330089573D /* memuDemoUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B222F1FA1DAA30330089573D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B222F1E31DAA30320089573D /* Chin Dictionary */;
-			targetProxy = B222F1F91DAA30330089573D /* PBXContainerItemProxy */;
-		};
-		B222F2051DAA30330089573D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B222F1E31DAA30320089573D /* Chin Dictionary */;
-			targetProxy = B222F2041DAA30330089573D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B222F1EB1DAA30330089573D /* Main.storyboard */ = {
@@ -587,16 +433,16 @@
 		};
 		B222F20D1DAA30330089573D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B8352D86229E5B10C4D5A2F /* Pods-memuDemo.debug.xcconfig */;
+			baseConfigurationReference = 9B0549197A5030604FB970C6 /* Pods-Chin_Dictionary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 9WTS5XC9M4;
-				INFOPLIST_FILE = memuDemo/Info.plist;
+				INFOPLIST_FILE = Chin_Dictionary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ChinDictionary;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Chin_Dictionary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "memuDemo/memuDemo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Chin_Dictionary/Chin_Dictionary-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -604,78 +450,24 @@
 		};
 		B222F20E1DAA30330089573D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56FA6F9E7F59F957A7A815E9 /* Pods-memuDemo.release.xcconfig */;
+			baseConfigurationReference = 0E39A672609D6332686158B8 /* Pods-Chin_Dictionary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 9WTS5XC9M4;
-				INFOPLIST_FILE = memuDemo/Info.plist;
+				INFOPLIST_FILE = Chin_Dictionary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ChinDictionary;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Chin_Dictionary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "memuDemo/memuDemo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Chin_Dictionary/Chin_Dictionary-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		B222F2101DAA30330089573D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = memuDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = parth.memuDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/memuDemo.app/memuDemo";
-			};
-			name = Debug;
-		};
-		B222F2111DAA30330089573D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = memuDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = parth.memuDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/memuDemo.app/memuDemo";
-			};
-			name = Release;
-		};
-		B222F2131DAA30330089573D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = memuDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = parth.memuDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = memuDemo;
-			};
-			name = Debug;
-		};
-		B222F2141DAA30330089573D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = memuDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = parth.memuDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = memuDemo;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B222F1DF1DAA30320089573D /* Build configuration list for PBXProject "Dictionary_Chin" */ = {
+		B222F1DF1DAA30320089573D /* Build configuration list for PBXProject "Chin_Dictionary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B222F20A1DAA30330089573D /* Debug */,
@@ -684,29 +476,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B222F20C1DAA30330089573D /* Build configuration list for PBXNativeTarget "Chin Dictionary" */ = {
+		B222F20C1DAA30330089573D /* Build configuration list for PBXNativeTarget "Chin_Dictionary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B222F20D1DAA30330089573D /* Debug */,
 				B222F20E1DAA30330089573D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B222F20F1DAA30330089573D /* Build configuration list for PBXNativeTarget "memuDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B222F2101DAA30330089573D /* Debug */,
-				B222F2111DAA30330089573D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B222F2121DAA30330089573D /* Build configuration list for PBXNativeTarget "memuDemoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B222F2131DAA30330089573D /* Debug */,
-				B222F2141DAA30330089573D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

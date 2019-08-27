@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Dictionary_Chin.xcodeproj">
+      location = "group:/Users/mangpi/Downloads/Chin_Dictionary/Chin_Dictionary.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

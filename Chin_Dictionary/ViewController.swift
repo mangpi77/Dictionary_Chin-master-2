@@ -11,38 +11,27 @@ import UIKit
 import UserNotifications
 import RealmSwift
 import Alamofire
-
 var dailyWord: Results<wordOfTheDay>?
 var wordOfDay = wordOfTheDay()
 
 class ViewController: UIViewController, UITextFieldDelegate, UINavigationControllerDelegate {
     
-    
+
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var btnMenuButton: UIBarButtonItem!
     @IBOutlet weak var todayWord: UILabel!
     @IBOutlet weak var todayWordDefination: UILabel!
     
-    
-    
-    
-    
     private let notificationPublisher = NotificationPublisher()
     
     var data123 : [[String: Any]] = [[String: Any]]()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         print(Realm.Configuration.defaultConfiguration.fileURL!)
-        
-        func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-            openRealm()
-            print(Realm.Configuration.defaultConfiguration.fileURL!)
-            return true
-        }
+
         let url = "https://www.dictionaryapi.com/account/example?key=3ef3c315-9a08-4844-affb-28a10bb35da8"
         
         Alamofire.request(url).responseJSON { (response) in
@@ -53,10 +42,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UINavigationControl
                 }
             }
         }
-        
-        
-        
-        
         
         
         //
@@ -188,22 +173,22 @@ class ViewController: UIViewController, UITextFieldDelegate, UINavigationControl
         }
     }
     
-    func openRealm() {
-        let bundlePath = Bundle.main.path(forResource: "default", ofType: "realm")!
-        let defaultPath = Realm.Configuration.defaultConfiguration.fileURL?.path
-        let fileManager = FileManager.default
-        
-        // Only need to copy the prepopulated `.realm` file if it doesn't exist yet
-        if !fileManager.fileExists(atPath: defaultPath!){
-            print("use pre-populated database")
-            do {
-                try fileManager.copyItem(atPath: bundlePath, toPath: defaultPath!)
-                print("Copied")
-            } catch {
-                print(error)
-            }
-        }
-    }
+//    func openRealm() {
+//        let bundlePath = Bundle.main.path(forResource: "default", ofType: "realm")!
+//        let defaultPath = Realm.Configuration.defaultConfiguration.fileURL?.path
+//        let fileManager = FileManager.default
+//        
+//        // Only need to copy the prepopulated `.realm` file if it doesn't exist yet
+//        if !fileManager.fileExists(atPath: defaultPath!){
+//            print("use pre-populated database")
+//            do {
+//                try fileManager.copyItem(atPath: bundlePath, toPath: defaultPath!)
+//                print("Copied")
+//            } catch {
+//                print(error)
+//            }
+//        }
+//    }
     
     func loadWordOfTheDay()
     {

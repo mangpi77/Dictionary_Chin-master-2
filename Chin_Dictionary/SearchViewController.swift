@@ -28,17 +28,11 @@ var wSearch = Data()
 
 class SearchViewController: UITableViewController {
     
-    
     @IBOutlet weak var menuButton: UIBarButtonItem!
     @IBOutlet weak var tblAppleProducts: UITableView!
-    
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         
         revealViewController().rearViewRevealWidth = 200
         menuButton.target = revealViewController()
@@ -49,11 +43,7 @@ class SearchViewController: UITableViewController {
         //        }
         
         loadDictionary()
-        
-        
-        
     }
-    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return wordSearch?.count ?? 1
@@ -79,10 +69,7 @@ class SearchViewController: UITableViewController {
             destination.searched = (wordSearch![(tblAppleProducts.indexPathForSelectedRow?.row)!])
             
             DetailsViewController.GlobalVariable.fromSearch = true;
-            
         }
-        
-        
     }
     
     

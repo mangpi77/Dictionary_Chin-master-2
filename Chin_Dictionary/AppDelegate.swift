@@ -8,9 +8,14 @@
 
 import UIKit
 import UserNotifications
+import RealmSwift
+
+var newRealm = try! Realm()
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
+    
+
 
     var window: UIWindow?
     @IBOutlet weak var tblAppleProducts: UITableView!
@@ -27,11 +32,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         }
     }
     
-
     
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-       
+        
+        
+
         requestNotificationAuthorization(application: application)
         return true
     }
@@ -76,6 +82,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
            
         }
     }
+    
+
+
 
 }
 
