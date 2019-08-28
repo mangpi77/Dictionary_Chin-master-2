@@ -318,8 +318,8 @@
                                     <navigationItem title="About" id="bio-Vu-o9K"/>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed and managed by Chin Community USA" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7g-Ve-GBd">
-                                <rect key="frame" x="16" y="162" width="343" height="143"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="b7g-Ve-GBd">
+                                <rect key="frame" x="16" y="162" width="343" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -328,7 +328,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="GFA-eZ-Ofg" firstAttribute="top" secondItem="VUg-EJ-PdF" secondAttribute="top" id="C1a-c0-7Md"/>
-                            <constraint firstItem="K1r-PZ-iH8" firstAttribute="top" secondItem="b7g-Ve-GBd" secondAttribute="bottom" constant="362" id="C9V-fE-qho"/>
                             <constraint firstItem="b7g-Ve-GBd" firstAttribute="top" secondItem="GFA-eZ-Ofg" secondAttribute="bottom" constant="118" id="KbY-bE-u6J"/>
                             <constraint firstAttribute="trailing" secondItem="GFA-eZ-Ofg" secondAttribute="trailing" id="aXQ-c4-j6b"/>
                             <constraint firstItem="GFA-eZ-Ofg" firstAttribute="leading" secondItem="VUg-EJ-PdF" secondAttribute="leading" id="ewz-fg-2hf"/>
@@ -393,7 +392,7 @@
                                     <action selector="checkAnswer:" destination="SXD-9v-4Qf" eventType="touchUpInside" id="bWI-E0-ODl"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="t4l-9i-rkE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t4l-9i-rkE">
                                 <rect key="frame" x="16" y="172" width="343" height="147"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="147" id="MOk-oX-VhG"/>

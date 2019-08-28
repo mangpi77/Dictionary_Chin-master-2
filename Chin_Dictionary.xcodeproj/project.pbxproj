@@ -30,6 +30,8 @@
 		DB8CE07522C06E780034CEFC /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8CE07422C06E780034CEFC /* DetailsViewController.swift */; };
 		DBA5897D231603F100ED1FAC /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = DBA5897C231603F100ED1FAC /* default.realm */; };
 		DBA5898123164D0A00ED1FAC /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA5898023164D0A00ED1FAC /* QuizViewController.swift */; };
+		DBA5898523165A7100ED1FAC /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA5898323165A7100ED1FAC /* ProgressHUD.m */; };
+		DBA5898623165A7100ED1FAC /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DBA5898423165A7100ED1FAC /* ProgressHUD.bundle */; };
 		DBBE3BF4229C869100F48DE6 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBE3BF3229C869100F48DE6 /* SettingViewController.swift */; };
 		DBBE3BF6229C967D00F48DE6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBE3BF5229C967D00F48DE6 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
@@ -63,6 +65,9 @@
 		DB8CE07422C06E780034CEFC /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		DBA5897C231603F100ED1FAC /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; name = default.realm; path = ../../default.realm; sourceTree = "<group>"; };
 		DBA5898023164D0A00ED1FAC /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		DBA5898223165A7100ED1FAC /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProgressHUD.h; path = ../../../Desktop/ProgressHUD.h; sourceTree = "<group>"; };
+		DBA5898323165A7100ED1FAC /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProgressHUD.m; path = ../../../Desktop/ProgressHUD.m; sourceTree = "<group>"; };
+		DBA5898423165A7100ED1FAC /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ProgressHUD.bundle; path = ../../../Desktop/ProgressHUD.bundle; sourceTree = "<group>"; };
 		DBBE3BF3229C869100F48DE6 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		DBBE3BF5229C967D00F48DE6 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		F2F8DC06295168F357FE9846 /* Realm */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Realm; path = ../../../../../../../../Downloads/Chin_Dictionary/Pods/Realm/Realm; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,6 +152,9 @@
 				B222F1F31DAA30330089573D /* Info.plist */,
 				B222F2151DAA33D90089573D /* Chin_Dictionary-Bridging-Header.h */,
 				B222F2191DAA354D0089573D /* menuViewController.swift */,
+				DBA5898423165A7100ED1FAC /* ProgressHUD.bundle */,
+				DBA5898223165A7100ED1FAC /* ProgressHUD.h */,
+				DBA5898323165A7100ED1FAC /* ProgressHUD.m */,
 			);
 			path = Chin_Dictionary;
 			sourceTree = "<group>";
@@ -222,6 +230,7 @@
 				B222F1F21DAA30330089573D /* LaunchScreen.storyboard in Resources */,
 				DBA5897D231603F100ED1FAC /* default.realm in Resources */,
 				B222F1EF1DAA30330089573D /* Assets.xcassets in Resources */,
+				DBA5898623165A7100ED1FAC /* ProgressHUD.bundle in Resources */,
 				B222F1ED1DAA30330089573D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +309,7 @@
 				DB86236522A8B7B4005D7FF2 /* RecentTableViewController.swift in Sources */,
 				B222F2181DAA33DA0089573D /* SWRevealViewController.m in Sources */,
 				DB6311F722D2927900525B2C /* FavoriteTableViewController.swift in Sources */,
+				DBA5898523165A7100ED1FAC /* ProgressHUD.m in Sources */,
 				DB45B17722F76DEB00EC05C1 /* DailyWordTableViewController.swift in Sources */,
 				DBBE3BF4229C869100F48DE6 /* SettingViewController.swift in Sources */,
 				DB42CB2722F25E3100D60311 /* NotificationPublisher.swift in Sources */,

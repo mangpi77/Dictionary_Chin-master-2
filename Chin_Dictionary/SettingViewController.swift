@@ -35,11 +35,13 @@ class SettingViewController: UIViewController {
         
         if (sender.tag == Int(rightAnswer)){
             print ("correct answer")
+            ProgressHUD.showSuccess("Correct")
             
             userPoint += 100
         }
         else{
             print ("wrong answer")
+            ProgressHUD.showError("Wrong!")
             
         }
                 if (currentQuestion <= questionLength){
@@ -54,6 +56,7 @@ class SettingViewController: UIViewController {
                         NSLog("The \"OK\" alert occured.")
                     }))
                     self.present(alert, animated: true, completion: startOver)
+                    
         }
     }
     
