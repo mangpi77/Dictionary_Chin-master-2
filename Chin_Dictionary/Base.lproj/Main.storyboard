@@ -393,7 +393,7 @@
                                     <action selector="checkAnswer:" destination="SXD-9v-4Qf" eventType="touchUpInside" id="bWI-E0-ODl"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="t4l-9i-rkE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="t4l-9i-rkE">
                                 <rect key="frame" x="16" y="172" width="343" height="147"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="147" id="MOk-oX-VhG"/>

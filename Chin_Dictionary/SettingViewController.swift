@@ -45,6 +45,16 @@ class SettingViewController: UIViewController {
                 if (currentQuestion <= questionLength){
                     newQuestion()
                 }
+                else{
+                    print ("end of quiz")
+                   
+                    
+                    let alert = UIAlertController(title: "Quiz completed", message: "You have completed the Quiz", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                        NSLog("The \"OK\" alert occured.")
+                    }))
+                    self.present(alert, animated: true, completion: startOver)
+        }
     }
     
     
@@ -58,7 +68,10 @@ class SettingViewController: UIViewController {
         newQuestion()
     }
     
-    
+    func startOver(){
+         currentQuestion = 0
+         userPoint = 0
+    }
     func newQuestion(){
         
         totalScore.text = "\(userPoint)\n" + "/" + "10"
