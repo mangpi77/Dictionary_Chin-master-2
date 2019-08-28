@@ -10,12 +10,10 @@ import UIKit
 import UserNotifications
 import RealmSwift
 
-var newRealm = try! Realm()
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
     
-
 
     var window: UIWindow?
     @IBOutlet weak var tblAppleProducts: UITableView!
@@ -36,8 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        
-
+        openRealm()
         requestNotificationAuthorization(application: application)
         return true
     }
@@ -83,6 +80,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         }
     }
     
+    func openRealm() {
+        let bundlePath = Bundle.main.path(forResource: "default", ofType: "realm")!
+        let defaultPath = Realm.Configuration.defaultConfiguration.fileURL!.path
+        let fileManager = FileManager.default
+        
+        // Only need to copy the prepopulated `.realm` file if it doesn't exist yet
+        if !fileManager.fileExists(atPath: defaultPath){
+            print("use pre-populated database")
+            do {
+                try fileManager.copyItem(atPath: bundlePath, toPath: defaultPath)
+                print("Copied")
+            } catch {
+                print(error)
+            }
+        }
+        
+    }
 
 
 

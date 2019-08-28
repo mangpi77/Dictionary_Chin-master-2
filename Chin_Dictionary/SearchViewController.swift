@@ -9,8 +9,6 @@
 import UIKit
 import RealmSwift
 
-let realm = try! Realm()
-
 var fSearch = Favorite()
 
 var recentWord: Results<recentSearch>?
@@ -42,7 +40,7 @@ class SearchViewController: UITableViewController {
         //wordOfTheDay(word: wordOfDay)
         //        }
         
-        loadDictionary()
+       loadDictionary()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -87,9 +85,9 @@ class SearchViewController: UITableViewController {
         previousNumber = randomNumber
         
         
-        guard let realm = try? Realm() else {
-            return
-        }
+//        guard let realm = try? Realm() else {
+//            return
+//        }
         
         wordOfDay.word = wordCount[randomNumber].searchWord
         wordOfDay.Defination = wordCount[randomNumber].wordDefination

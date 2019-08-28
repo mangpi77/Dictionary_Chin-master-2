@@ -13,6 +13,7 @@ import SwiftyJSON
 import Alamofire
 
 
+
 class DetailsViewController: UIViewController {
     
     struct GlobalVariable{

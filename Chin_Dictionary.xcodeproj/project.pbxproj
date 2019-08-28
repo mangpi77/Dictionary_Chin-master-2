@@ -25,8 +25,10 @@
 		DB6311F522D291E400525B2C /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6311F422D291E400525B2C /* Favorite.swift */; };
 		DB6311F722D2927900525B2C /* FavoriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6311F622D2927800525B2C /* FavoriteTableViewController.swift */; };
 		DB73EBDE227AA1EC00DEC4EE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73EBDD227AA1EC00DEC4EE /* MainViewController.swift */; };
+		DB7DE0552314E5640063997B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB7DE0542314E5640063997B /* StoreKit.framework */; };
 		DB86236522A8B7B4005D7FF2 /* RecentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB86236422A8B7B4005D7FF2 /* RecentTableViewController.swift */; };
 		DB8CE07522C06E780034CEFC /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8CE07422C06E780034CEFC /* DetailsViewController.swift */; };
+		DBA5897D231603F100ED1FAC /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = DBA5897C231603F100ED1FAC /* default.realm */; };
 		DBBE3BF4229C869100F48DE6 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBE3BF3229C869100F48DE6 /* SettingViewController.swift */; };
 		DBBE3BF6229C967D00F48DE6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBE3BF5229C967D00F48DE6 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
@@ -55,11 +57,12 @@
 		DB6311F422D291E400525B2C /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
 		DB6311F622D2927800525B2C /* FavoriteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewController.swift; sourceTree = "<group>"; };
 		DB73EBDD227AA1EC00DEC4EE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DB7DE0542314E5640063997B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		DB86236422A8B7B4005D7FF2 /* RecentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTableViewController.swift; sourceTree = "<group>"; };
 		DB8CE07422C06E780034CEFC /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		DBA5897C231603F100ED1FAC /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; name = default.realm; path = ../../default.realm; sourceTree = "<group>"; };
 		DBBE3BF3229C869100F48DE6 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		DBBE3BF5229C967D00F48DE6 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		DBF269412310BB88003EFCF4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../../../Downloads/WCLShineButton-master/WCLShineButton/Info.plist"; sourceTree = "<group>"; };
 		F2F8DC06295168F357FE9846 /* Realm */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Realm; path = ../../../../../../../../Downloads/Chin_Dictionary/Pods/Realm/Realm; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -68,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB7DE0552314E5640063997B /* StoreKit.framework in Frameworks */,
 				D53159CBF7EB6102F4DDD3D2 /* Realm in Frameworks */,
 				9360452A14BCBD8AD27F80BD /* Pods_Chin_Dictionary.framework in Frameworks */,
 			);
@@ -88,6 +92,7 @@
 		79351D3DB003D3CF09AC01A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DB7DE0542314E5640063997B /* StoreKit.framework */,
 				F2F8DC06295168F357FE9846 /* Realm */,
 				7488F6CB5D1FFD3A4E85D099 /* Pods_Chin_Dictionary.framework */,
 			);
@@ -115,6 +120,7 @@
 		B222F1E61DAA30330089573D /* Chin_Dictionary */ = {
 			isa = PBXGroup;
 			children = (
+				DBA5897C231603F100ED1FAC /* default.realm */,
 				B222F1E71DAA30330089573D /* AppDelegate.swift */,
 				DB42CB2622F25E3100D60311 /* NotificationPublisher.swift */,
 				DB0A6DF022A2EA16002A900B /* Data.swift */,
@@ -133,7 +139,6 @@
 				B222F1EB1DAA30330089573D /* Main.storyboard */,
 				DB73EBDD227AA1EC00DEC4EE /* MainViewController.swift */,
 				B222F21B1DAA36070089573D /* MenuCell.swift */,
-				DBF269412310BB88003EFCF4 /* Info.plist */,
 				B222F1EE1DAA30330089573D /* Assets.xcassets */,
 				B222F1F01DAA30330089573D /* LaunchScreen.storyboard */,
 				B222F1F31DAA30330089573D /* Info.plist */,
@@ -161,7 +166,7 @@
 			dependencies = (
 			);
 			name = Chin_Dictionary;
-			productName = memuDemo;
+			productName = Chin_Dictionary;
 			productReference = B222F1E41DAA30330089573D /* Chin_Dictionary.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -180,6 +185,11 @@
 						DevelopmentTeam = 9WTS5XC9M4;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -207,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B222F1F21DAA30330089573D /* LaunchScreen.storyboard in Resources */,
+				DBA5897D231603F100ED1FAC /* default.realm in Resources */,
 				B222F1EF1DAA30330089573D /* Assets.xcassets in Resources */,
 				B222F1ED1DAA30330089573D /* Main.storyboard in Resources */,
 			);
@@ -440,7 +451,7 @@
 				DEVELOPMENT_TEAM = 9WTS5XC9M4;
 				INFOPLIST_FILE = Chin_Dictionary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Chin_Dictionary;
+				PRODUCT_BUNDLE_IDENTIFIER = Chin.Chin.Dictionary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Chin_Dictionary/Chin_Dictionary-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -457,7 +468,7 @@
 				DEVELOPMENT_TEAM = 9WTS5XC9M4;
 				INFOPLIST_FILE = Chin_Dictionary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Chin_Dictionary;
+				PRODUCT_BUNDLE_IDENTIFIER = Chin.Chin.Dictionary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Chin_Dictionary/Chin_Dictionary-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

@@ -12,6 +12,7 @@ import SwipeCellKit
 
 //checker = 1
 
+let realm = try! Realm()
 
 
 class DailyWordTableViewController: UITableViewController {
@@ -22,7 +23,6 @@ class DailyWordTableViewController: UITableViewController {
     @IBOutlet weak var tblAppleProducts: UITableView!
     
     
-    let realm = try! Realm()
     var favoriteWord: Results<Favorite>?
     var wordSearch: Results<Data>?
     var recentWord: Results<recentSearch>?

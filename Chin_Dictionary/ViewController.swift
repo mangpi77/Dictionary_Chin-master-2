@@ -11,8 +11,12 @@ import UIKit
 import UserNotifications
 import RealmSwift
 import Alamofire
+var ifavoriteWord: Results<Favorite>?
 var dailyWord: Results<wordOfTheDay>?
 var wordOfDay = wordOfTheDay()
+var iSearch = Favorite()
+
+
 
 class ViewController: UIViewController, UITextFieldDelegate, UINavigationControllerDelegate {
     
@@ -43,9 +47,10 @@ class ViewController: UIViewController, UITextFieldDelegate, UINavigationControl
             }
         }
         
+        //loadFavorite()
         
         //
-       //loadWordOfTheDay()
+      //loadWordOfTheDay()
         //
         ////       let searchButton = UIButton (frame:  CGRect(x: 20, y:260, width: 330, height: 40))
         ////        searchButton.backgroundColor = UIColor.red
@@ -243,19 +248,37 @@ class ViewController: UIViewController, UITextFieldDelegate, UINavigationControl
         // Dispose of any resources that can be recreated.
     }
     
-    func run24HoursTimer() {
+//    func run24HoursTimer() {
+//        
+//        let currentDate = Date()
+//        let waitingDateTimeInterval:Int64 = UserDefaults.standard.value(forKey: "waiting_date") as? Int64 ?? 0
+//        let currentDateTimeInterval = currentDate.currentTimeMillis()
+//        let dateDiffrence = currentDateTimeInterval - waitingDateTimeInterval
+//        if dateDiffrence > 24*60*60*1000 {
+//            // Call the function that you want to be repeated every 24 hours here:
+//            notificationPublisher.scheduleNotification(title: "Word Of The Day", subtitle:  todayWord.text!, body: todayWordDefination.text!, badge: 1, delayInterval: nil)
+//            
+//            UserDefaults.standard.setValue(currentDateTimeInterval, forKey: "waiting_date")
+//            UserDefaults.standard.synchronize()
+//        }
+//    }
+    
+    func loadFavorite()
+    {
+        ifavoriteWord = realm.objects(Favorite.self).sorted(byKeyPath: "dateCreated",ascending: false)
         
-        let currentDate = Date()
-        let waitingDateTimeInterval:Int64 = UserDefaults.standard.value(forKey: "waiting_date") as? Int64 ?? 0
-        let currentDateTimeInterval = currentDate.currentTimeMillis()
-        let dateDiffrence = currentDateTimeInterval - waitingDateTimeInterval
-        if dateDiffrence > 24*60*60*1000 {
-            // Call the function that you want to be repeated every 24 hours here:
-            notificationPublisher.scheduleNotification(title: "Word Of The Day", subtitle:  todayWord.text!, body: todayWordDefination.text!, badge: 1, delayInterval: nil)
-            
-            UserDefaults.standard.setValue(currentDateTimeInterval, forKey: "waiting_date")
-            UserDefaults.standard.synchronize()
-        }
+                       var sample = ["Tiger"]
+                       var searchedWord = [String]()
+        
+                        searchedWord.append(sample[0])
+        
+                        fSearch.favoriteWord = searchedWord[0]
+                        fSearch.dateCreated = Date()
+        
+                        try! realm.write {
+                            realm.add(fSearch)
+                        }
+        
     }
     
     
