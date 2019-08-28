@@ -29,6 +29,7 @@
 		DB86236522A8B7B4005D7FF2 /* RecentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB86236422A8B7B4005D7FF2 /* RecentTableViewController.swift */; };
 		DB8CE07522C06E780034CEFC /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8CE07422C06E780034CEFC /* DetailsViewController.swift */; };
 		DBA5897D231603F100ED1FAC /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = DBA5897C231603F100ED1FAC /* default.realm */; };
+		DBA5898123164D0A00ED1FAC /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA5898023164D0A00ED1FAC /* QuizViewController.swift */; };
 		DBBE3BF4229C869100F48DE6 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBE3BF3229C869100F48DE6 /* SettingViewController.swift */; };
 		DBBE3BF6229C967D00F48DE6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBE3BF5229C967D00F48DE6 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
@@ -61,6 +62,7 @@
 		DB86236422A8B7B4005D7FF2 /* RecentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTableViewController.swift; sourceTree = "<group>"; };
 		DB8CE07422C06E780034CEFC /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		DBA5897C231603F100ED1FAC /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; name = default.realm; path = ../../default.realm; sourceTree = "<group>"; };
+		DBA5898023164D0A00ED1FAC /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		DBBE3BF3229C869100F48DE6 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		DBBE3BF5229C967D00F48DE6 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		F2F8DC06295168F357FE9846 /* Realm */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Realm; path = ../../../../../../../../Downloads/Chin_Dictionary/Pods/Realm/Realm; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +129,7 @@
 				DB0A6DF622A4D366002A900B /* recentSearch.swift */,
 				DB42CB2422EFED8200D60311 /* wordOfTheDay.swift */,
 				DB6311F422D291E400525B2C /* Favorite.swift */,
+				DBA5898023164D0A00ED1FAC /* QuizViewController.swift */,
 				B222F2161DAA33DA0089573D /* SWRevealViewController.h */,
 				B222F2171DAA33DA0089573D /* SWRevealViewController.m */,
 				B222F1E91DAA30330089573D /* ViewController.swift */,
@@ -302,6 +305,7 @@
 				DB42CB2722F25E3100D60311 /* NotificationPublisher.swift in Sources */,
 				DB0A6DF722A4D366002A900B /* recentSearch.swift in Sources */,
 				DB8CE07522C06E780034CEFC /* DetailsViewController.swift in Sources */,
+				DBA5898123164D0A00ED1FAC /* QuizViewController.swift in Sources */,
 				B222F21A1DAA354D0089573D /* menuViewController.swift in Sources */,
 				DB73EBDE227AA1EC00DEC4EE /* MainViewController.swift in Sources */,
 			);

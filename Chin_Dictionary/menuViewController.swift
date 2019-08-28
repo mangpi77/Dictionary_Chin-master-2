@@ -18,8 +18,8 @@ class menuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     var iconArray:Array = [UIImage]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        ManuNameArray = ["Home","Recent","Favorite", "Word of the Day", "Setting"]
-        iconArray = [UIImage(named:"book-2")!,UIImage(named:"history-2")!,UIImage(named:"heart-2")!,UIImage(named:"calendar-2")!, UIImage(named:"MoreSettings-2")!]
+        ManuNameArray = ["Home","Recent","Favorite", "Word of the Day", "Quiz", "About"]
+        iconArray = [UIImage(named:"book-2")!,UIImage(named:"history-2")!,UIImage(named:"heart-2")!,UIImage(named:"calendar-2")!, UIImage(named:"Quiz-2")!, UIImage(named:"MoreSettings-2")!]
         
         //imgProfile.layer.borderWidth = 2
 //        imgProfile.layer.borderColor = UIColor.green.cgColor
@@ -105,7 +105,7 @@ class menuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         }
         
         
-        if cell.lblMenuname.text! == "Setting"
+        if cell.lblMenuname.text! == "Quiz"
         {
             print("setting Tapped")
             
@@ -122,6 +122,17 @@ class menuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             
             let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "DailyWordTableViewController") as! DailyWordTableViewController
+            let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
+            
+            revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
+        }
+        
+        if cell.lblMenuname.text! == "About"
+        {
+            print("word of the day Tapped")
+            
+            let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "QuizViewController") as! QuizViewController
             let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
             
             revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
