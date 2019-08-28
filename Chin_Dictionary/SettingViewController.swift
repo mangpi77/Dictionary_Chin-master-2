@@ -16,84 +16,107 @@ var numQuestion = Data()
 
 
 class SettingViewController: UIViewController {
-
+    
     @IBOutlet weak var SettingButton: UIBarButtonItem!
+    
+    @IBOutlet weak var question: UILabel!
+    @IBOutlet weak var questionCount: UILabel!
+    @IBOutlet weak var totalScore: UILabel!
+    
+    
+    var currentQuestion = 0
+    var questionLength = 10
+    var rightAnswer:UInt32 = 0
+    var userPoint = 0
+    
+  
+    
+    @IBAction func checkAnswer(_ sender: AnyObject) {
+        
+        if (sender.tag == Int(rightAnswer)){
+            print ("correct answer")
+            
+            userPoint += 100
+        }
+        else{
+            print ("wrong answer")
+            
+        }
+                if (currentQuestion <= questionLength){
+                    newQuestion()
+                }
+    }
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        revealViewController().rearViewRevealWidth = 200
+        SettingButton.target = revealViewController()
+        SettingButton.action = #selector(SWRevealViewController.revealToggle(_:))
+        
+        newQuestion()
+    }
+    
+    
+    func newQuestion(){
+        
+        totalScore.text = "\(userPoint)\n" + "/" + "10"
+        questionCount.text = "\(currentQuestion)"
         
         let wordCount = realm.objects(Data.self)
-        
         let random0 = createWordOfTheDay(word: numQuestion)
         let random1 = createWordOfTheDay(word: numQuestion)
         let random2 = createWordOfTheDay(word: numQuestion)
         
+        let randomQuestion = wordCount[random0].wordDefination
+        
         var question1 = ""
         var question2 = ""
         var question3 = ""
-        
-
-
-        var questionCounter = 3
-        var questions = [Int]()
-
-       
+        var questions = [String]()
         
         question1 = wordCount[random0].searchWord
         question2 = wordCount[random1].searchWord
         question3 = wordCount[random2].searchWord
         
-        print (question1)
-        print (question2)
-        print (question3)
+        questions.append(question1)
+        questions.append(question2)
+        questions.append(question3)
         
-        revealViewController().rearViewRevealWidth = 200
-        SettingButton.target = revealViewController()
-        SettingButton.action = #selector(SWRevealViewController.revealToggle(_:))
+        question.text! = randomQuestion
+        rightAnswer = arc4random_uniform(3) + 1
         
-        for _ in 0..<questionCounter{
-        createWordOfTheDay(word: numQuestion)
+        
+        var x = 1
+        
+        for i in 1...3{
+            
+            let answer = view.viewWithTag(i) as? UIButton
+            if (i == rightAnswer){
+                answer!.setTitle(questions[0], for: .normal)
+            }
+            else {
+                answer!.setTitle(questions[x], for: .normal)
+                x = 2
+            }
         }
-        questionCounter = questionCounter + 1
-
-
+         currentQuestion += 1
     }
     
-
     func createWordOfTheDay(word:Data) -> Int{
         
         let wordCount = realm.objects(Data.self)
         let maxNumber:Int = wordCount.count
         var randomNumber = Int.random(in: 0..<maxNumber)
-        
-        var random1 = 0
-        var random2 = 0
-        var random3 = 0
         var previousNumber:Int = 0
         
         while previousNumber == randomNumber {
             
-                randomNumber = Int.random(in: 0..<maxNumber)
-                previousNumber = randomNumber
-           
-            
-           
+            randomNumber = Int.random(in: 0..<maxNumber)
+            previousNumber = randomNumber
         }
-        
-
         return randomNumber
-        
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
