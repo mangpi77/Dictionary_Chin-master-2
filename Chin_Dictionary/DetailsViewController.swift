@@ -17,7 +17,10 @@ import Alamofire
 class DetailsViewController: UIViewController {
     
     struct GlobalVariable{
+        public var fromNotification: Bool = false
         static var fromRecent: Bool = false
+        static var fromRecent1: Bool = false
+
         static var fromFavorite: Bool = false
         static var fromSearch: Bool = false
         static var searched: Bool = false
@@ -29,6 +32,7 @@ class DetailsViewController: UIViewController {
         static var isFavorite: Bool = false
         public var normalColor:     UIColor
         public var selectedColor:   UIColor
+        
         
     }
     
@@ -99,9 +103,9 @@ class DetailsViewController: UIViewController {
             isFavorite.toggle()
             switch isFavorite {
             case true :
-                favoriteButton.tintColor = UIColor.white
-            case false:
                 favoriteButton.tintColor = UIColor.darkGray
+            case false:
+                favoriteButton.tintColor = UIColor.white
             }
             
             
@@ -417,7 +421,13 @@ class DetailsViewController: UIViewController {
         
         let passSound = word.text!
         let trimmedString = passSound.trimmingCharacters(in: .whitespaces)
+        
+        if (trimmedString != ""){
         playSound(sound: trimmedString)
+        }
+        else{
+            print ("Error parsing")
+        }
         
     }
     var checked = false
@@ -427,11 +437,11 @@ class DetailsViewController: UIViewController {
         let image = UIImage(named: "heart")?.withRenderingMode(.alwaysTemplate)
         favoriteButton.setImage(image, for: .normal)
         if (isFavorite == true){
-            favoriteButton.tintColor = UIColor.white
+            favoriteButton.tintColor = UIColor.darkGray
 
         }
         else {
-            favoriteButton.tintColor = UIColor.darkGray
+            favoriteButton.tintColor = UIColor.white
 
         }
         

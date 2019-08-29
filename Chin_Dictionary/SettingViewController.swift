@@ -9,6 +9,7 @@
 import UIKit
 import UserNotifications
 import RealmSwift
+import AudioToolbox
 
 var questionBank: Results<recentSearch>?
 var question: Results<Data>?
@@ -42,6 +43,7 @@ class SettingViewController: UIViewController {
         else{
             print ("wrong answer")
             ProgressHUD.showError("Wrong!")
+            AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
             
         }
                 if (currentQuestion <= questionLength){

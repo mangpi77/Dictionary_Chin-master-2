@@ -11,15 +11,9 @@ import UIKit
 import UserNotifications
 import RealmSwift
 import Alamofire
-var ifavoriteWord: Results<Favorite>?
-var dailyWord: Results<wordOfTheDay>?
 var wordOfDay = wordOfTheDay()
-var iSearch = Favorite()
-
-
 
 class ViewController: UIViewController, UITextFieldDelegate, UINavigationControllerDelegate {
-    
 
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var searchButton: UIButton!
@@ -47,97 +41,30 @@ class ViewController: UIViewController, UITextFieldDelegate, UINavigationControl
             }
         }
         
-        //loadFavorite()
-        
-        //
-      //loadWordOfTheDay()
-        //
-        ////       let searchButton = UIButton (frame:  CGRect(x: 20, y:260, width: 330, height: 40))
-        ////        searchButton.backgroundColor = UIColor.red
-        ////        self.view.addSubview(searchButton)
-        //
-        //
-       //createWordOfTheDay(word: wordOfDay)
-        
-        
-        
+        let wordCount1 = realm.objects(wordOfTheDay.self)
+
+
+        print ("word count",wordCount1.count)
+        if (wordCount1.count > 0){
+            loadWordOfTheDay()
+        }
+        else {
+            print ("no to day word")
+        }
+                
                 notificationPublisher.scheduleNotification(title: "Tu ni hrang cafang", subtitle:  todayWord.text!, body: todayWordDefination.text!, badge: 1, delayInterval: nil)
-        //
-        //
-        //        notificationPublisher.sendNotification(title: "Word Of The Day", subtitle:  todayWord.text!, body: todayWordDefination.text!, badge: 1, delayInterval: 10)
-        
-        
-        
-        // Do any additional setup after loading the view, typically from a nib.
+
+
         if revealViewController() != nil {
             btnMenuButton.target = revealViewController()
             btnMenuButton.action = #selector(SWRevealViewController.revealToggle(_:))
-            
-            //            let notificationCenter = UNUserNotificationCenter.current()
-            //            let options: UNAuthorizationOptions = [.alert, .sound, .badge]
-            //
-            //            notificationCenter.requestAuthorization(options: options) {
-            //                (didAllow, error) in
-            //                if !didAllow {
-            //                    print("User has declined notifications")
-            //                }
-            //            }
-            //
-            //
-            //
-            //
-            //            notificationCenter.getNotificationSettings { (settings) in
-            //                if settings.authorizationStatus != .authorized {
-            //                    // Notifications not allowed
-            //                }
-            //            }
-            //
-            //            notificationCenter.getNotificationSettings { (settings) in
-            //                if settings.authorizationStatus != .authorized {
-            //                    // Notifications not allowed
-            //                }
-            //            }
-            //
-            //            let content = UNMutableNotificationContent()
-            //            content.title = "Tu ni hrang Cafang"
-            //            content.body = "Beautiful"
-            //            content.sound = UNNotificationSound.default
-            //
-            //           // var dateComponents = DateComponents()
-            //
-            //           //dateComponents.second = 5
-            //
-            //           // let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDate, repeats: false)
-            //           // let triggerDaily = Calendar.current.dateComponents([hour, .minute, .second], from: date)
-            //
-            //            let Timetrigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
-            //
-            //            let date = Date(timeIntervalSinceNow: 3600)
-            //            let triggerDate = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: date)
-            //
-            //            //let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDate, repeats: false)
-            //
-            //            let triggerDaily = Calendar.current.dateComponents([.hour, .minute, .second], from: date)
-            //            let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDaily, repeats: true)
-            //
-            //            let identifier = "UYLLocalNotification"
-            //            let request = UNNotificationRequest(identifier: identifier, content: content, trigger: Timetrigger)
-            //
-            //            notificationCenter.add(request, withCompletionHandler: { (error) in
-            //                if error != nil {
-            //                    // Something went wrong
-            //                }
-            //            })
         }
     }
-    
     
     @IBAction func todayWordButton(_ sender: Any) {
         
         performSegue(withIdentifier: "wordOfTheDay", sender: self)
-        
         print ("Performing Segue")
-        
         DetailsViewController.GlobalVariable.fromWordOfDay = true
     }
     
@@ -160,58 +87,24 @@ class ViewController: UIViewController, UITextFieldDelegate, UINavigationControl
             return
         }
         
-        
-        
-        // wordOfDay.word = todayWord.text!
-        //wordOfDay.Defination = todayWordDefination.text!
-        
         wordOfDay.word = "\(wordCount[randomNumber].searchWord)"
         wordOfDay.Defination = "\(wordCount[randomNumber].wordDefination)"
-        // print ("Daily Word: ", dailyWord)
-        //print ("Daily Word Defination: ", dailyDefination)
+    
         print ("Random Number ---> ", maxNumber)
-        // print (wordOfDay.word!)
-        // print (wordOfDay.Defination!)
-        
+  
         try? realm.write {
             realm.add(word)
         }
     }
     
-//    func openRealm() {
-//        let bundlePath = Bundle.main.path(forResource: "default", ofType: "realm")!
-//        let defaultPath = Realm.Configuration.defaultConfiguration.fileURL?.path
-//        let fileManager = FileManager.default
-//        
-//        // Only need to copy the prepopulated `.realm` file if it doesn't exist yet
-//        if !fileManager.fileExists(atPath: defaultPath!){
-//            print("use pre-populated database")
-//            do {
-//                try fileManager.copyItem(atPath: bundlePath, toPath: defaultPath!)
-//                print("Copied")
-//            } catch {
-//                print(error)
-//            }
-//        }
-//    }
-    
+
     func loadWordOfTheDay()
     {
-        
         let wordCount = realm.objects(wordOfTheDay.self)
         let maxNumber:Int = wordCount.count
         
-        
-        
-        //        todayWord.text = "\(wordCount[maxNumber - 1].word!)"
-        //        todayWordDefination.text = "\(wordCount[maxNumber - 1].Defination!)"
-        
         let definationSplit = "\(String(describing: (wordCount[maxNumber - 1].Defination!)))"
         let completedSplit: [String] = definationSplit.components(separatedBy: ",")
-        
-        
-        //todayWord.text = "\((wordCount[maxNumber - 1].word!))"
-        //
         
         todayWord.text = "\((wordCount[maxNumber - 1].word!))"
         dateLabel.text = "\((wordCount[maxNumber - 1].dateCreated!))"
@@ -232,15 +125,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UINavigationControl
             
             print (index,"\u{2022}",element)
             todayWordDefination.text = "\(labelText)"
-            //todayWordDefination.text = "how are you"
         }
-        // print ("Daily Word: ", dailyWord)
-        //print ("Daily Word Defination: ", dailyDefination)
-        //print ("Max Number ---> ", maxNumber)
-        //print (wordOfDay.word!)
-        // print (wordOfDay.Defination!)
-        
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -256,33 +141,15 @@ class ViewController: UIViewController, UITextFieldDelegate, UINavigationControl
 //        let dateDiffrence = currentDateTimeInterval - waitingDateTimeInterval
 //        if dateDiffrence > 24*60*60*1000 {
 //            // Call the function that you want to be repeated every 24 hours here:
-//            notificationPublisher.scheduleNotification(title: "Word Of The Day", subtitle:  todayWord.text!, body: todayWordDefination.text!, badge: 1, delayInterval: nil)
+//            createWordOfTheDay(word: wordOfDay)
 //            
 //            UserDefaults.standard.setValue(currentDateTimeInterval, forKey: "waiting_date")
 //            UserDefaults.standard.synchronize()
 //        }
 //    }
     
-    func loadFavorite()
-    {
-        ifavoriteWord = realm.objects(Favorite.self).sorted(byKeyPath: "dateCreated",ascending: false)
-        
-                       var sample = ["Tiger"]
-                       var searchedWord = [String]()
-        
-                        searchedWord.append(sample[0])
-        
-                        fSearch.favoriteWord = searchedWord[0]
-                        fSearch.dateCreated = Date()
-        
-                        try! realm.write {
-                            realm.add(fSearch)
-                        }
-        
     }
-    
-    
-}
+
 
 extension Date {
     func currentTimeMillis() -> Int64 {
