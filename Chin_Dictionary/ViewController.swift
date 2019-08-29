@@ -53,6 +53,8 @@ class ViewController: UIViewController, UITextFieldDelegate, UINavigationControl
         }
                 
                 notificationPublisher.scheduleNotification(title: "Tu ni hrang cafang", subtitle:  todayWord.text!, body: todayWordDefination.text!, badge: 1, delayInterval: nil)
+        
+//        notificationPublisher.sendNotification(title: "Tu ni hrang cafang", subtitle:  todayWord.text!, body: todayWordDefination.text!, badge: 1, delayInterval: nil)
 
 
         if revealViewController() != nil {
@@ -108,12 +110,12 @@ class ViewController: UIViewController, UITextFieldDelegate, UINavigationControl
         
         todayWord.text = "\((wordCount[maxNumber - 1].word!))"
         dateLabel.text = "\((wordCount[maxNumber - 1].dateCreated!))"
+        
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MM-dd-yyyy"
+        dateFormatter.dateFormat = "EEEE, MM, d YYYY"
         
         if let date = dateFormatter.date(from: dateLabel.text!) {
-            print(dateFormatter.string(from: date))
-            dateLabel.text = dateFormatter.string(from: date)
+            dateLabel.text = date.asString()
         } else {
             print("There was an error decoding the string")
         }
@@ -152,7 +154,9 @@ class ViewController: UIViewController, UITextFieldDelegate, UINavigationControl
 
 
 extension Date {
-    func currentTimeMillis() -> Int64 {
-        return Int64(self.timeIntervalSince1970 * 1000)
-    }
+    func asString() -> String{
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "dd.MM.yy"
+    return dateFormatter.string(from: self)
+}
 }

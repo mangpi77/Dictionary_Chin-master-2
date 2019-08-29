@@ -1,5 +1,5 @@
 //
-//  RecentTableViewController.swift
+//  DailyWordTableViewController.swift
 //  memuDemo
 //
 //  Created by Mr.Mang Pi on 6/5/19.
@@ -64,13 +64,7 @@ class DailyWordTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "favorite", for: indexPath) as! SwipeTableViewCell
         
-        //print (dailyWord?[indexPath.row].dateCreated! as Any)
-        //let dateString = dailyWord?[indexPath.row].dateCreated!.toString(dateFormat: "MMM/dd/yyyy")
-        //print( dateString!)
-        
-      // var  converteDdate = (dailyWord?[indexPath.row].dateCreated)
-        
-       // var final  = converteDdate!.toString(dateFormat: "yyyy/MMM/dd HH:mm:ss")
+  
         
         cell.textLabel?.text = dailyWord?[indexPath.row].word ?? "No word found"
         //print (final)
@@ -96,19 +90,7 @@ class DailyWordTableViewController: UITableViewController {
     func loadDailyWord()
     {
         dailyWord = realm.objects(wordOfTheDay.self).sorted(byKeyPath: "dateCreated",ascending: false)
-        
-        //               var sample = ["Tiger"]
-        //               var searchedWord = [String]()
-        //
-        //                searchedWord.append(sample[0])
-        //
-        //                fSearch.favoriteWord = searchedWord[0]
-        //                fSearch.dateCreated = Date()
-        //
-        //                try! realm.write {
-        //                    realm.add(fSearch)
-        //                }
-        
+
         tableView.reloadData()
     }
     

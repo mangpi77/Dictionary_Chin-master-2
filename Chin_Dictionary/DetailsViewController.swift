@@ -19,8 +19,6 @@ class DetailsViewController: UIViewController {
     struct GlobalVariable{
         public var fromNotification: Bool = false
         static var fromRecent: Bool = false
-        static var fromRecent1: Bool = false
-
         static var fromFavorite: Bool = false
         static var fromSearch: Bool = false
         static var searched: Bool = false
@@ -200,7 +198,7 @@ class DetailsViewController: UIViewController {
             }
             
             print ("Recent Test: " ,GlobalVariable.fromSearch)
-            GlobalVariable.fromRecent = false
+            GlobalVariable.wordOfDay = false
             
             print ("Then -->\(completedSplit)")
         }
@@ -208,7 +206,7 @@ class DetailsViewController: UIViewController {
         print ("Searched Word: ", word.text!)
         print ("Defination: ",wordDescription.text!)
         
-        if (findRecent(wordSearch: word.text!) != nil && GlobalVariable.fromRecent == false)
+        if (findRecent(wordSearch: word.text!) != nil && GlobalVariable.fromRecent == false && GlobalVariable.wordOfDay == true)
         {
             print ("Already exists in recent")
             isRecent = true
@@ -567,7 +565,7 @@ class DetailsViewController: UIViewController {
                 newRealm.recentSearch = searched.searchWord
                 newRealm.dateCreated = Date()
                 newRealm.recentDefination = searched.wordDefination
-                realm.add(newRealm)
+                realm.add(newRealm, update: true)
             }
             
         } catch

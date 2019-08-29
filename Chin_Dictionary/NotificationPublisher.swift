@@ -29,7 +29,7 @@ class NotificationPublisher: NSObject
     
     func sendNotification (title: String, subtitle: String, body: String, badge: Int?, delayInterval: Int?){
         
-       // createWordOfTheDay(word:notificationWord)
+        createWordOfTheDay(word:notificationWord)
 
         print ("Daily Notification")
         
